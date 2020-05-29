@@ -1,6 +1,6 @@
 questions = [
     {
-        "question": "Oppression by corporations is more of a concern than oppression by governments.",
+        "question": "Dit is een test vraag negeer dit.",
         "effect": {
             "econ": 10,
             "dipl": 0,
