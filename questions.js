@@ -90,10 +90,32 @@ questions = [
         }
     },
     {
-        "question": "Gemeentes en provincies houden zich alleen bezig met onzinnige zaken.",
+        "question": "Gemeentes en provincies houden zich vaak bezig met onzinnige zaken.",
         "effect": {
             "FRL": 0,
             "REG": -10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
+        }
+    },
+    {
+        "question": "De gemeentepolitie moet worden heringevoerd.",
+        "effect": {
+            "FRL": 0,
+            "REG": 10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
+        }
+    },
+    {
+        "question": "Politieagenten, ambulancepersoneel en brandweerlieden moeten de lokale streektaal kunnen spreken dan wel verstaan.",
+        "effect": {
+            "FRL": 0,
+            "REG": 10,
             "DEM": 0,
             "COM": 0,
             "PRO": 0,
