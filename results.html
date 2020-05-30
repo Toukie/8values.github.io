@@ -19,10 +19,10 @@
 
 <h1>Results</h1>
 
-<h2>Friese As: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Friese As: <span class="weight-300" id="Friesland-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
-    <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
+    <img id="img-Friesland" src="value_images/Friesland.svg" height="128pt"/>
+    <div class="bar Friesland" id="bar-Friesland"><div class="text-wrapper" id="Friesland"></div></div>
     <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
     <img id="img-wealth" src="value_images/wealth.svg" height="128pt"/>
 </div>
@@ -91,7 +91,7 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Fries","Anti Fries"]
+    FrlArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
     diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
     govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
     sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
@@ -108,16 +108,16 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
+    Friesland  = getQueryVariable("e")
     peace     = getQueryVariable("d")
     liberty   = getQueryVariable("g")
     progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
+    wealth    = (100 - Friesland).toFixed(1)
     might     = (100 - peace   ).toFixed(1)
     authority = (100 - liberty ).toFixed(1)
     tradition = (100 - progress).toFixed(1)
 
-    setBarValue("equality", equality)
+    setBarValue("Friesland", Friesland)
     setBarValue("wealth", wealth)
     setBarValue("peace", peace)
     setBarValue("might", might)
@@ -126,7 +126,7 @@ stats"></a></div></noscript>
     setBarValue("progress", progress)
     setBarValue("tradition", tradition)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
+    document.getElementById("Friesland-label").innerHTML = setLabel(Friesland, FrlArray)
     document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
     document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
     document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
@@ -135,7 +135,7 @@ stats"></a></div></noscript>
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.frl - Friesland), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
         dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
@@ -162,7 +162,7 @@ stats"></a></div></noscript>
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0,0,800,650);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-Friesland")
         ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-wealth")
         ctx.drawImage(img, 680, 170, 100, 100)
@@ -185,7 +185,7 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*Friesland-2, 72)
         ctx.fillStyle="#00897b"
         ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
         ctx.fillStyle="#ff9800"
@@ -208,7 +208,7 @@ stats"></a></div></noscript>
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
+        if (Friesland  > 30) {ctx.fillText(Friesland + "%", 130, 237.5)}
         if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
         if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
         if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
@@ -222,7 +222,7 @@ stats"></a></div></noscript>
         ctx.fillText("8values.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
+        ctx.fillText("Friese As: " + document.getElementById("Friesland-label").innerHTML, 400, 175)
         ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
         ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
         ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
