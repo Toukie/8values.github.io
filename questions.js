@@ -1,632 +1,448 @@
 questions = [
+    // friesland vs nederland
     {
-        "question": "Dit is een test vraag negeer dit.",
+        "question": "Friesland moet onafhankelijk worden.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 10,
+            "REG": 5,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "It is necessary for the government to intervene in the economy to protect consumers.",
+        "question": "Indien Friesland niet onafhankelijk kan worden moet het een speciale status krijgen.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 10,
+            "REG": 5,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "The freer the markets, the freer the people.",
+        "question": "'t Frysk befrijingsleger doet meer goed dan kwaad.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 10,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
+        "question": "Het classificeren van 't Frysk befrijingsleger als een terroristsche beweging was een terecht besluit.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": -10,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Publicly-funded research is more beneficial to the people than leaving it to the market.",
+        "question": "Friesland is en blijft een Nederlandse provincie.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
+            "FRL": -10,
+            "REG": -5,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Tariffs on international trade are important to encourage local production.",
+        "question": "Separatistische organisaties, ook al gebruiken ze geen geweld, moeten hard worden aangepakt.",
         "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
+            "FRL": -10,
+            "REG": -5,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "From each according to his ability, to each according to his needs.",
+        "question": "Er moet meer aandacht komen voor de Friese taal en cultuur.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 10,
+            "REG": 5,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
+    // regionaal vs centraal
     {
-        "question": "It would be best if social programs were abolished in favor of private charity.",
+        "question": "Gemeentes en provincies begrijpen hun inwoners beter dan de regering.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Taxes should be increased on the rich to provide for the poor.",
+        "question": "Gemeentes en provincies houden zich alleen bezig met onzinnige zaken.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": -10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Inheritance is a legitimate form of wealth.",
+        "question": "Mensen moeten zichzelf zien als Nederlanders ipv uit welke provincie ze komen.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -5
+            "FRL": 0,
+            "REG": -10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Basic utilities like roads and electricity should be publicly owned.",
+        "question": "In elke provincie horen dezelfde wetten te gelden.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": -10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Government intervention is a threat to the economy.",
+        "question": "Nederland moet een federale staat worden.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
+    // democratie vs authoritair
     {
-        "question": "Those with a greater ability to pay should receive better healthcare.",
+        "question": "Bindende referenda moeten worden ingevoerd.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 10,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Quality education is a right of all people.",
+        "question": "De leden van de eerste kamer moeten democratisch gekozen worden.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 10,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "The means of production should belong to the workers who use them.",
+        "question": "Volksvertegenwoordigers vertegenwoordigen vaak het volk niet goed.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": -10,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "The United Nations should be abolished.",
+        "question": "De meerderheid van de mensen maakt slechte beslissingen.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": -10,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Military action by our nation is often necessary to protect it.",
+        "question": "Democratie is de beste bestuursvorm.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 10,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "I support regional unions, such as the European Union.",
+        "question": "Verkiezingen zijn onzinnig.",
         "effect": {
-            "econ": -5,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 5
+            "FRL": 0,
+            "REG": 0,
+            "DEM": -20,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "It is important to maintain our national sovereignty.",
+        "question": "Nederland moet een absolute monarchie worden.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": -20,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "A united world government would be beneficial to mankind.",
+        "question": "Een coup op z'n tijd moet kunnen.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": -15,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "It is more important to retain peaceful relations than to further our strength.",
+        "question": "Burgemeesters moeten democratisch gekozen worden.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 10,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 0
         }
     },
+    // communisme vs kapitalisme
     {
-        "question": "Wars do not need to be justified to other countries.",
+        "question": "Onderdrukking door bedrijven is een groter gevaar dan een onderdrukking van de overheid",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 10,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Military spending is a waste of money.",
+        "question": "De rijken moeten meer belasting betalen.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 10,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "International aid is a waste of money.",
+        "question": "De overheid moet niet in de markt ingrijpen.",
         "effect": {
-            "econ": -5,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": -10,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "My nation is great.",
+        "question": "Alle sectoren die door de publieke sector worden uitgevoerd moeten worden vervangen door de private sector.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": -15,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Research should be conducted on an international scale.",
+        "question": "Uitkeringen moeten worden vervangen door liefdadigheidsorganisaties.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": -20,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Governments should be accountable to the international community.",
+        "question": "Arme mensen kiezen ervoor om arm te blijven.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": -15,
+            "PRO": 0,
+            "ISO": 0
         }
     },
     {
-        "question": "Even when protesting an authoritarian government, violence is not acceptable.",
+        "question": "De waarde van een goed moet worden bepaald door de arbeid die in de productie is gestoken.",
         "effect": {
-            "econ": 0,
-            "dipl": 5,
-            "govt": -5,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 15,
+            "PRO": 0,
+            "ISO": 0
         }
     },
+    // progressief vs conservatief
     {
-        "question": "My religious values should be spread as much as possible.",
+        "question": "Drugs moet gelegaliseerd dan wel gedecriminaliseerd worden.",
         "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -10
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 10,
+            "ISO": 0
         }
     },
     {
-        "question": "Our nation's values should be spread as much as possible.",
+        "question": "Dierproeven moeten verboden worden.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 10,
+            "ISO": 0
         }
     },
     {
-        "question": "It is very important to maintain law and order.",
+        "question": "We moeten tradities zoals Sinterklaas behouden, zelfs als sommige mensen erop tegen zijn.",
         "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -5
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": -10,
+            "ISO": 0
         }
     },
     {
-        "question": "The general populace makes poor decisions.",
+        "question": "Tradities zijn een belangrijk deel van de Nederlandse cultuur.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": -5,
+            "ISO": 0
         }
     },
     {
-        "question": "Physician-assisted suicide should be legal.",
+        "question": "Asielzoekers moeten zoveel mogelijk integreren in de Nederlandse samenleving.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": -10,
+            "ISO": 0
         }
     },
     {
-        "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
+        "question": "Er moeten meer kunst en cultuur subsidies komen.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 10,
+            "ISO": 0
         }
     },
     {
-        "question": "Government surveillance is necessary in the modern world.",
+        "question": "Abortus hoort in vrijwel alle gevallen illegaal te zijn.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": -10,
+            "ISO": 0
         }
     },
+    // isolatie vs internationaal
     {
-        "question": "The very existence of the state is a threat to our liberty.",
+        "question": "Nederland moet de Europese Unie verlaten.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 10
         }
     },
     {
-        "question": "Regardless of political opinions, it is important to side with your country.",
+        "question": "De Verenigde Naties heeft meer macht nodig.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -5
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": -10
         }
     },
     {
-        "question": "All authority should be questioned.",
+        "question": "Grenzen moeten afgeschaft worden.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 5
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": -10
         }
     },
     {
-        "question": "A hierarchical state is best.",
+        "question": "Globalisme is in de meeste gevallen gunstig.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": -10
         }
     },
     {
-        "question": "It is important that the government follows the majority opinion, even if it is wrong.",
+        "question": "We moeten ons niet bezig houden met internationale zaken.",
         "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The stronger the leadership, the better.",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Democracy is more than a decision-making process.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Environmental regulations are essential.",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "A better world will come from automation, science, and technology.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Children should be educated in religious or traditional values.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Traditions are of no value on their own.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Religion should play a role in government.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Churches should be taxed the same way other institutions are taxed.",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Climate change is currently one of the greatest threats to our way of life.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is important that we work as a united world to combat climate change.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Society was better many years ago than it is now.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "It is important that we maintain the traditions of our past.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "It is important that we think in the long term, beyond our lifespans.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Reason is more important than maintaining our culture.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Drug use should be legalized or decriminalized.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 2
-        }
-    },
-    {
-        "question": "Same-sex marriage should be legal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
-        "question": "No cultures are superior to others.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Sex outside marriage is immoral.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "If we accept migrants at all, it is important that they assimilate into our culture.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Abortion should be prohibited in most or all cases.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Gun ownership should be prohibited for those without a valid reason.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "I support single-payer, universal healthcare.",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Prostitution should be illegal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Maintaining family values is essential.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "To chase progress at all costs is dangerous.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Genetic modification is a force for good, even on humans.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "We should open our borders to immigration.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Governments should be as concerned about foreigners as they are about their own citizens.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "All people - regardless of factors like culture or sexuality - should be treated equally.",
-        "effect": {
-            "econ": 10,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is important that we further my group's goals above all others.",
-        "effect": {
-            "econ": -10,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -10
+            "FRL": 0,
+            "REG": 0,
+            "DEM": 0,
+            "COM": 0,
+            "PRO": 0,
+            "ISO": 10
         }
     }
 ];
