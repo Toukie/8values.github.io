@@ -85,10 +85,12 @@
 
         }
         function calc_score(score, max) {
-            if (score = 95.2) {
+            var newscore = (100 * (max + score) / (2 * max)).toFixed(1)
+            if (newscore == 95.2) {
                 return 100;
+            } else {
+                return newscore;
             }
-            return (100 * (max + score) / (2 * max)).toFixed(1)
         }
         function results() {
             location.href = `results.html`
