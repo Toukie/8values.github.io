@@ -137,7 +137,7 @@
             dist = 0
             dist += Math.pow(Math.abs(ideologies[i].stats.FRL - Friesland), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.REG - Centraal), 1.73856063)
+            dist += Math.pow(Math.abs(ideologies[i].stats.REG - Centraal), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
             if (dist < ideodist) {
                 ideology = ideologies[i].name
