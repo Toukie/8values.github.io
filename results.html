@@ -29,16 +29,16 @@
         </div>
         <img id="img-Nederland" src="value_images/Nederland.svg" height="128pt" />
     </div>
-    <h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+    <h2>Regionale As: <span class="weight-300" id="regionale-label"></span></h2>
     <div class="axis">
-        <img id="img-might" src="value_images/might.svg" height="128pt" />
-        <div class="bar might" id="bar-might">
-            <div class="text-wrapper" id="might"></div>
+        <img id="img-regionaal" src="value_images/regionaal.svg" height="128pt" />
+        <div class="bar regionaal" id="bar-regionaal">
+            <div class="text-wrapper" id="regionaal"></div>
         </div>
-        <div class="bar peace" id="bar-peace">
-            <div class="text-wrapper" id="peace"></div>
+        <div class="bar centraal" id="bar-centraal">
+            <div class="text-wrapper" id="centraal"></div>
         </div>
-        <img id="img-peace" src="value_images/peace.svg" height="128pt" />
+        <img id="img-centraal" src="value_images/centraal.svg" height="128pt" />
     </div>
     <h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
     <div class="axis">
@@ -93,7 +93,7 @@
         }
 
         frlArray = ["potentieel FBL lid", "pro Fries", "Friese neiging", "neutraal", "Anti-Friese neiging", "Anti-Fries", "Friesland hater"]
-        diplArray = ["Cosmopolitan", "Internationalist", "Peaceful", "Balanced", "Patriotic", "Nationalist", "Chauvinist"]
+        regArray = ["Cosmopolitan", "Internationalist", "Peaceful", "Balanced", "Patriotic", "Nationalist", "Chauvinist"]
         govtArray = ["Anarchist", "Libertarian", "Liberal", "Moderate", "Statist", "Authoritarian", "Totalitarian"]
         sctyArray = ["Revolutionary", "Very Progressive", "Progressive", "Neutral", "Traditional", "Very Traditional", "Reactionary"]
 
@@ -109,25 +109,25 @@
         }
 
         Friesland = getQueryVariable("e")
-        peace = getQueryVariable("d")
+        centraal = getQueryVariable("d")
         liberty = getQueryVariable("g")
         progress = getQueryVariable("s")
         Nederland = (100 - Friesland).toFixed(1)
-        might = (100 - peace).toFixed(1)
+        regionaal = (100 - centraal).toFixed(1)
         authority = (100 - liberty).toFixed(1)
         tradition = (100 - progress).toFixed(1)
 
         setBarValue("Friesland", Friesland)
         setBarValue("Nederland", Nederland)
-        setBarValue("peace", peace)
-        setBarValue("might", might)
+        setBarValue("centraal", centraal)
+        setBarValue("regionaal", regionaal)
         setBarValue("liberty", liberty)
         setBarValue("authority", authority)
         setBarValue("progress", progress)
         setBarValue("tradition", tradition)
 
         document.getElementById("Fries-label").innerHTML = setLabel(Friesland, frlArray)
-        document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
+        document.getElementById("regionale-label").innerHTML = setLabel(centraal, regArray)
         document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
         document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
 
@@ -137,7 +137,7 @@
             dist = 0
             dist += Math.pow(Math.abs(ideologies[i].stats.FRL - Friesland), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
+            dist += Math.pow(Math.abs(ideologies[i].stats.REG - centraal), 1.73856063)
             dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
             if (dist < ideodist) {
                 ideology = ideologies[i].name
