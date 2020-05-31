@@ -1,7 +1,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>8values Quiz</title>
+    <title>RMTK stemwijzer</title>
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 <body>
     <script type="application/javascript" src="questions.js">
     </script>
-    <h1>8values</h1>
+    <h1>RMTK stemwijzer</h1>
     <hr>
     <h2 style="text-align:center;" id="question-number">Loading...</h2>
     <p class="question" id="question-text"></p>
@@ -26,15 +26,15 @@
     <!-- JavaScript for the test itself -->
 
     <script>
-        var max_frl, max_REG, max_DEM, max_COM, max_PRO, max_ISO; // Max possible scores
-        max_frl = max_REG = max_DEM = max_COM = max_PRO = max_ISO = 0;
-        var frl, REG, DEM, COM, PRO, ISO; // User's scores
-        frl = REG = DEM = COM = PRO = ISO = 0;
+        var max_FRL, max_REG, max_DEM, max_COM, max_PRO, max_ISO; // Max possible scores
+        max_FRL = max_REG = max_DEM = max_COM = max_PRO = max_ISO = 0;
+        var FRL, REG, DEM, COM, PRO, ISO; // User's scores
+        FRL = REG = DEM = COM = PRO = ISO = 0;
         var qn = 0; // Question number
         var prev_answer = null;
         init_question();
         for (var i = 0; i < questions.length; i++) {
-            max_frl += Math.abs(questions[i].effect.frl)
+            max_FRL += Math.abs(questions[i].effect.FRL)
             max_REG += Math.abs(questions[i].effect.REG)
             max_DEM += Math.abs(questions[i].effect.DEM)
             max_COM += Math.abs(questions[i].effect.COM)
@@ -55,7 +55,7 @@
         }
 
         function next_question(mult) {
-            frl += mult * questions[qn].effect.frl
+            FRL += mult * questions[qn].effect.FRL
             REG += mult * questions[qn].effect.REG
             DEM += mult * questions[qn].effect.DEM
             COM += mult * questions[qn].effect.COM
@@ -74,7 +74,7 @@
                 return;
             }
             qn--;
-            frl -= prev_answer * questions[qn].effect.frl;
+            FRL -= prev_answer * questions[qn].effect.FRL;
             REG -= prev_answer * questions[qn].effect.REG;
             DEM -= prev_answer * questions[qn].effect.DEM;
             COM -= prev_answer * questions[qn].effect.COM;
@@ -89,7 +89,7 @@
         }
         function results() {
             location.href = `results.html`
-                + `?e=${calc_score(frl, max_frl)}`
+                + `?e=${calc_score(FRL, max_FRL)}`
                 + `&d=${calc_score(REG, max_REG)}`
                 + `&g=${calc_score(DEM, max_DEM)}`
                 + `&s=${calc_score(COM, max_COM)}`
