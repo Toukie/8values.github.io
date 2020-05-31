@@ -139,16 +139,6 @@ div.text-wrapper {
     color: #222222;
     display: inline-block;
 }
-div.equality {
-    background-color: #f44336;
-    text-align: left;
-    border-right-style: solid;
-}
-div.wealth {
-    background-color: #00897b;
-    text-align: right;
-    border-left-style: solid;
-}
 div.Friesland {
     background-color: #f44336;
     text-align: left;
@@ -175,6 +165,16 @@ div.peace {
     border-left-style: solid;
 }
 div.might {
+    background-color: #ff9800;
+    text-align: left;
+    border-right-style: solid;
+}
+div.centraal {
+    background-color: #03a9f4;
+    text-align: right;
+    border-left-style: solid;
+}
+div.regionaal {
     background-color: #ff9800;
     text-align: left;
     border-right-style: solid;
