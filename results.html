@@ -29,16 +29,16 @@
         </div>
         <img id="img-Nederland" src="value_images/Nederland.svg" height="128pt" />
     </div>
-    <h2>Regionale As: <span class="weight-300" id="regionale-label"></span></h2>
+    <h2>Regionale As: <span class="weight-300" id="Regionale-label"></span></h2>
     <div class="axis">
-        <img id="img-regionaal" src="value_images/regionaal.svg" height="128pt" />
-        <div class="bar regionaal" id="bar-regionaal">
-            <div class="text-wrapper" id="regionaal"></div>
+        <img id="img-Regionaal" src="value_images/Regionaal.svg" height="128pt" />
+        <div class="bar Regionaal" id="bar-Regionaal">
+            <div class="text-wrapper" id="Regionaal"></div>
         </div>
-        <div class="bar centraal" id="bar-centraal">
-            <div class="text-wrapper" id="centraal"></div>
+        <div class="bar Centraal" id="bar-Centraal">
+            <div class="text-wrapper" id="Centraal"></div>
         </div>
-        <img id="img-centraal" src="value_images/centraal.svg" height="128pt" />
+        <img id="img-Centraal" src="value_images/Centraal.svg" height="128pt" />
     </div>
     <h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
     <div class="axis">
@@ -109,25 +109,25 @@
         }
 
         Friesland = getQueryVariable("e")
-        centraal = getQueryVariable("d")
+        Centraal = getQueryVariable("d")
         liberty = getQueryVariable("g")
         progress = getQueryVariable("s")
         Nederland = (100 - Friesland).toFixed(1)
-        regionaal = (100 - centraal).toFixed(1)
+        Regionaal = (100 - Centraal).toFixed(1)
         authority = (100 - liberty).toFixed(1)
         tradition = (100 - progress).toFixed(1)
 
         setBarValue("Friesland", Friesland)
         setBarValue("Nederland", Nederland)
-        setBarValue("centraal", centraal)
-        setBarValue("regionaal", regionaal)
+        setBarValue("Centraal", Centraal)
+        setBarValue("Regionaal", Regionaal)
         setBarValue("liberty", liberty)
         setBarValue("authority", authority)
         setBarValue("progress", progress)
         setBarValue("tradition", tradition)
 
         document.getElementById("Fries-label").innerHTML = setLabel(Friesland, frlArray)
-        document.getElementById("regionale-label").innerHTML = setLabel(centraal, regArray)
+        document.getElementById("Regionale-label").innerHTML = setLabel(Centraal, regArray)
         document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
         document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
 
@@ -137,7 +137,7 @@
             dist = 0
             dist += Math.pow(Math.abs(ideologies[i].stats.FRL - Friesland), 2)
             dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-            dist += Math.pow(Math.abs(ideologies[i].stats.REG - centraal), 1.73856063)
+            dist += Math.pow(Math.abs(ideologies[i].stats.REG - Centraal), 1.73856063)
             dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
             if (dist < ideodist) {
                 ideology = ideologies[i].name
