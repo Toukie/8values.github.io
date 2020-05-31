@@ -1,7 +1,7 @@
 questions = [
     // friesland vs nederland
     {
-        "question": "update 1 Friesland moet onafhankelijk worden.",
+        "question": "update 2 Friesland moet onafhankelijk worden.",
         "effect": {
             "FRL": 10,
             "REG": 5,
